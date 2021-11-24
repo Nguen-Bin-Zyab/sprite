@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: orange;
+		}
+		.univ{
+			margin: 200px;
+			width: 200px;
+			text-align: center;
+			
+			background:  rgb(248, 20, 20);
+			
+			position: relative;
+			overflow: hidden;
+		}
+		.text{
+			padding: 70px 30px;
+			border: 2px solid #000;
+		}
+		.univ .star{
+			position: absolute;
+			background: url(i/border3.png);
+			width: 54px;
+			height: 54px;
+			
+		}
+		.world .star{
+			background: url(i/sprite.png) no-repeat;
+			width: 40px;
+			height: 68px;
+		}
+		.lt{
+			left: -27px;
+			top: -27px;
+		}
+		.lb{
+			left: -27px;
+			bottom: -27px;
+		}
+		.rt{
+			right: -27px;
+			top: -27px;
+		}
+		.rb{
+			right: -27px;
+			bottom: -27px;
+		}
+		
+		.world .lt{
+			top: -48px;
+			left: -20px;
+		}
+		.world .rt{
+			top: -48px;
+			right: -20px;
+		}
+		.world .lb{
+			bottom: -20px;
+			left: -20px;
+		}
+		.world .rb{
+			bottom: -20px;
+			right: -20px;
+		}
+		.world .text{
+			border: 5px solid #000;
+		}
+		.world .star{
+			clip: rect(28px, 40px, 68px, 0px);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="univ">
+		<div class="text">Тут будет какой-то внутренний контент</div>
+		<span class="star lt"></span>
+		<span class="star rt"></span>
+		<span class="star lb"></span>
+		<span class="star rb"></span>
+		
+	</div>
+
+	<div class="univ world">
+		<div class="text">Тут будет какой-то внутренний контент</div>
+		<span class="star lt"></span>
+		<span class="star rt"></span>
+		<span class="star lb"></span>
+		<span class="star rb"></span>
+		
+	</div>
+</body>
+</html>
